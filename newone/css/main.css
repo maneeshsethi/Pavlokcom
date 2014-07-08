@@ -456,7 +456,7 @@ h6 {
 }
 .block-headline{
 
-    float:right;
+    float:right;so 
      font-color: #fff;
      bottom:500px;
     text-align:center;
@@ -504,6 +504,14 @@ h6 {
 
     background-position:center 40px ;
     background-repeat: no-repeat;
+}
+
+.temp-title
+
+{
+
+       font-size: 30px;
+   font-family: 'halisgr-extralightitalic'
 }
 .block-3-box {
     width: 100%;
@@ -556,7 +564,84 @@ h6 {
     border-bottom: 1px solid #929292;
     margin: 70px auto;
 }
+
+
+
 #block-5 {
+    width: 100%;
+    height: 800px;
+    background-image: url('../images/block-5-bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.block-5-box {
+    width: 100%;
+    padding-top: 90px;
+}
+.block-5-title {
+    width: 100%;
+    text-align: center;
+}
+.block-5-holder {
+    background-image: url('../images/band-bg-new.png');
+    background-position: center 70px;
+    background-repeat: no-repeat;
+    height: 660px;
+    width: 880px;
+    margin: 0px auto;
+}
+
+.block-5-info{
+    margin-top:10px;
+    font-size:smaller;
+}
+
+.feat-holder {
+    text-align: center;
+    font-family: 'halisgr-regular';
+    font-weight: 600;
+}
+.feat-left {
+    width: 160px;
+    float: left;
+    height: 660px;
+    text-align: center;
+    padding-top: 90px
+}
+.feat-middle {
+    width: 160px;
+    float: left;
+    height: 660px;
+    margin: 0 200px;
+    text-align: center;
+    padding-top: 440px;
+}
+.feat-right {
+    width: 160px;
+    float: left;
+    height: 660px;
+    text-align: center;
+    padding-top: 90px;
+}
+.feat-btn {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #18191a;
+    display: block;
+    font-size: 14px;
+    padding: 13px 0px;
+    border: 1px solid #18191a;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+    text-decoration: none;
+}
+/*#block-5 {
     width: 100%;
     height: 800px;
     background-image: url('../images/block-5-bg.jpg');
@@ -581,6 +666,8 @@ h6 {
     margin: 0px auto;
 
 }
+
+
 .feat-holder {
     text-align: center;
     font-family: 'halisgr-regular';
@@ -626,9 +713,9 @@ h6 {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit 
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko 
+    box-sizing: border-box;         /* Opera/IE 8+ 
 }
 .heart-feat-btn{
     margin:-31px 0 0 26px;
@@ -661,6 +748,10 @@ h6 {
 .realtime-feat-btn{
     margin:-52px 0 0 -142px;
 }
+
+
+*/
+
 .devider {
     width: 100%;
     height: 90px;
