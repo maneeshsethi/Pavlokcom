@@ -496,10 +496,17 @@ h6 {
     font-family: 'halisgr-smedium';
 }
 #block-3 {
+	
     width: 100%;
     height: 800px;
    /* background-image: url('../images/block-3-bg.jpg'); */
 
+}
+#block-3 li{
+	position:absolute;
+left:50%;
+margin-left:-541px;
+	top:2600px;
 }
 
 .temp-title
@@ -509,10 +516,18 @@ h6 {
        font-size: 30px;
    font-family: 'halisgr-extralightitalic'
 }
+#mobileID{
+	position:relative;
+	left:50%;
+
+	width:550px;
+margin:0px;
+	margin-left:-250px;
+}
 .block-3-box {
     width: 100%;
-    padding-top: 550px;
-    background-image: url('../images/block-3.png');
+padding-top:40px;
+
     background-size: 100%;
 
     background-position:center 40px ;
@@ -529,6 +544,25 @@ h6 {
     text-align:center;
 
 
+}
+#mobile1{
+	opacity: 0;
+}
+#mobile2{
+	opacity: 0;
+}
+#mobile3{
+	opacity: 1;
+}
+#prevBtn{
+	position:absolute;
+	top:2900px;
+	left:20px;
+}
+#nextBtn{
+	position:absolute;
+	top:2900px;
+	right:20px;
 }
 .block-3-text p {
     color: #8b8c8c;
