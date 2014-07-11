@@ -7,7 +7,7 @@
  */
 /* ==========================================================================
    Fonts
-   ========================================================================== */ 
+   ========================================================================== */
 @font-face
 {
     font-family: halisgr-book;
@@ -438,7 +438,7 @@ h6 {
         font-size: 30px;
         text-align:center;
     }
-    
+
 .block-1-box p {
     /*color: #8b8c8c;*/
     color:#585a5a;
@@ -456,7 +456,7 @@ h6 {
 }
 .block-headline{
 
-    float:right;so 
+    float:right;so
      font-color: #fff;
      bottom:500px;
     text-align:center;
@@ -714,9 +714,9 @@ h6 {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit 
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko 
-    box-sizing: border-box;         /* Opera/IE 8+ 
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko
+    box-sizing: border-box;         /* Opera/IE 8+
 }
 .heart-feat-btn{
     margin:-31px 0 0 26px;
@@ -760,7 +760,7 @@ h6 {
 
 #block-6 {
     width: 100%;
-    height: 800px;
+    height: 692px;
     background-image: url('../images/block-6-bg.jpg');
     background-position: top center;
     background-repeat: no-repeat;
@@ -998,7 +998,7 @@ h6 {
     color: #000000;
     font-size: 30px;
     font-family: 'halisgr-extralightitalic';
-} 
+}
 
 .orange-text {
     color: #ffcd00;
