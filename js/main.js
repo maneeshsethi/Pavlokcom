@@ -39,7 +39,7 @@ function fadeToFone1() {
 	$("#mobile3").animate({
 		"opacity" : "0"
 	}, "1000");
-	$("#mobile1").delay(700).animate({
+	$("#mobile1").delay(300).animate({
 		"opacity" : "1"
 	}, "1000");
 }
@@ -55,7 +55,7 @@ function fadeToFone2() {
 	$("#mobile3").animate({
 		"opacity" : "0"
 	}, "1000");
-	$("#mobile2").delay(700).animate({
+	$("#mobile2").delay(300).animate({
 		"opacity" : "1"
 	}, "1000");
 }
@@ -71,7 +71,7 @@ function fadeToFone3() {
 	$("#mobile2").animate({
 		"opacity" : "0"
 	}, "1000");
-	$("#mobile3").delay(700).animate({
+	$("#mobile3").delay(300).animate({
 		"opacity" : "1"
 	}, "1000");
 }
