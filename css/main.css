@@ -706,7 +706,7 @@ padding-top:40px;
 
 }
 #scopeC h1{
-	font-family:Berlin Sans FB Demi;
+	font-family: 'PT Sans', sans-serif;
 	color:white;
 	text-align:center;
 	font-size:35px;
@@ -742,7 +742,7 @@ color:4f4f4f;
 }
 #rightC{
 	
-	background:#626262;
+
 	float:right;
 	height:100%;
 	width:270px;
@@ -753,7 +753,9 @@ color:4f4f4f;
 	font-size:20px;
 	padding-top:50px;
 	color:white;
-	font-family:"Franklin Gothic Book";
+	font-family: 'PT Sans', sans-serif;
+	color:#626262;
+	
 }
 #zap{
 	position:relative;
@@ -773,6 +775,25 @@ color:4f4f4f;
 	width:48%;
 	height:600px;
 	
+}
+#careerVibe h2{
+	font-family: 'Satisfy', cursive;
+	font-size:32px;
+	color:#585A5A;
+	
+	margin:20px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#careerVibe p{
+	margin:12px;
+	font-size:13px;
+	margin:20px;
+	margin-bottom:0px;
+}
+
+#careerVibe #positionsO{
+	margin-top:-30px;
 }
 .careerTab{
 	float:right;
