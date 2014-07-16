@@ -740,6 +740,21 @@ color:4f4f4f;
 
 	
 }
+#rightC{
+	
+	background:#626262;
+	float:right;
+	height:100%;
+	width:270px;
+	text-align:center;
+	
+}
+#careerContent h2{
+	font-size:20px;
+	padding-top:50px;
+	color:white;
+	font-family:"Franklin Gothic Book";
+}
 #zap{
 	position:relative;
 	left:50px;
