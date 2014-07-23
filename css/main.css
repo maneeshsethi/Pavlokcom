@@ -1644,3 +1644,39 @@ h6 {
 #human-detection{
   padding:5%;
 }
+/******************************************  COSMIC DEVELOPMENT  ********************************************/
+/*-+-+-+-+-+-+-+-+-+ bx slider's and block 4 +-+-+-+-+-+-+-+-+*/
+.border-img.thumbs{
+    width: 86px;
+    height: 86px;
+}
+.bx .border-img{
+    float: left;
+    margin-left: 7%;
+}
+.slider_w{
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+}
+#bx-pager a{
+    margin: 0 10px;
+}
+#block-4 {
+    height: auto;
+    background-position: 72% 30%;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+@media (max-width : 800px){
+    .bx p .border-img{
+        float: none;
+        margin: auto;
+    }
+    .bx li p .personal_intro{
+        float: none !important;
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
+/*-+-+-+-+-+-+-+-+-+ bx slider's +-+-+-+-+-+-+-+-+*/
