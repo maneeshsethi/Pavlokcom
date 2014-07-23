@@ -6,7 +6,7 @@ $(document).ready(function(){
     $(".phone-menu").click(function(){
       $(".menu-box").slideToggle("fast");
   });
-  
+   $(".slider1").bxSlider({controls:false, pagerCustom: '#bx-pager', touchEnabled: true});
 });
 
 $(window).load(function() {
