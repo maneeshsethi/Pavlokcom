@@ -1698,3 +1698,112 @@ h6 {
     height: auto;
     overflow: hidden;
 }
+.subscribe_wrap{
+    width: 100%;
+    max-width: 860px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 60px;
+}
+.subscribe{
+    width: 37%;
+    float: left;
+    position: relative;
+}
+.d_video{
+    width: 57%;
+    float: left;
+    border: 3px solid #ffcd00;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.subscribe input{
+    width: 90%;
+    float: left;
+    margin-left: 10%;
+    line-height: 42px;
+    margin-bottom: 35px;
+}
+.sub_in.btn{
+    border: none;
+    background: #ffcd00;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px 0px #705B04;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 0px 3px 0px 0px #705B04;
+    -moz-border-radius: 3px;
+    -moz-box-shadow: 0px 3px 0px 0px #705B04;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #FFE36E;
+}
+.sub_in.btn:hover{
+    box-shadow: 0px 2px 0px 0px #705B04;
+    -webkit-box-shadow: 0px 2px 0px 0px #705B04;
+    -moz-box-shadow: 0px 2px 0px 0px #705B04;
+}
+.sub_in.btn:focus{
+    box-shadow: 0px -2px 0px 0px #705B04;
+    -webkit-box-shadow: 0px -2px 0px 0px #705B04;
+    -moz-box-shadow: 0px -2px 0px 0px #705B04;
+}
+.sub_in.email{
+    margin-top: 10px;
+    border: none;
+    padding: 9px;
+    box-sizing: border-box;
+    height: 46px;
+    box-shadow: 0px 0px 0px 2px #ffcd00 inset;
+    -webkit-box-shadow: 0px 0px 0px 2px #ffcd00 inset;
+    -moz-box-shadow: 0px 0px 0px 2px #ffcd00 inset;
+}
+.sub_in.email:focus{
+    box-shadow: 0px 0px 5px 1px #ffcd00;
+    -webkit-box-shadow: 0px 0px 5px 1px #ffcd00;
+    -moz-box-shadow: 0px 0px 5px 1px #ffcd00;
+}
+.alert_subscribe{
+    color: #ffcd00;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 90%;
+    float: left;
+    margin-left: 10%;
+    display: none;
+}
+.alert_subscribe {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 3s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
