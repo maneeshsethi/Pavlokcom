@@ -1807,3 +1807,13 @@ h6 {
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
+@media (max-width : 780px){
+    .subscribe, .subscribe input{
+        width: 100%;
+        margin-left: 0;
+    }
+    .d_video{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+}
