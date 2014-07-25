@@ -37,7 +37,7 @@ $('#slider-nivo').nivoSlider({
     animSpeed: 500,                 // Slide transition speed
     pauseTime: 30000,                // How long each slide will show
     startSlide: 0,                  // Set starting Slide (0 index)
-    directionNav: true,             // Next & Prev navigation
+    directionNav: false,             // Next & Prev navigation
     controlNav: true,               // 1,2,3... navigation
     controlNavThumbs: false,        // Use thumbnails for Control Nav
     pauseOnHover: false,             // Stop animation while hovering
