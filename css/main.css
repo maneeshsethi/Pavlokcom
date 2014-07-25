@@ -1817,3 +1817,56 @@ h6 {
         margin-bottom: 20px;
     }
 }
+/**************** how it works *******************/
+.slider-external{
+    max-width: 920px;
+    bottom: auto;
+    top: 255px;
+    left: 50%;
+    margin-left: -460px;
+    z-index: 6;
+}
+.slider-external .t_d_left{
+    float: left;
+    margin-right: 26%;
+}
+.slider-external .t_d_right{
+    float: right;
+    margin-left: 26%;
+}
+.custom-thumb {
+    margin-bottom: 140px;
+}
+.ruler{
+    top: 60%;
+    bottom: auto;
+}
+@media (max-width : 1440px){
+    .ruler{
+        top: 90%;
+        bottom: auto;
+    }
+}
+@media (max-width : 1280px){
+    .slider-external{
+        top:20%;
+    }
+}
+@media (max-width : 920px){
+    .slider-external{
+        left: 0;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .nivo-caption {
+        top: 10%;
+        left: 15%;
+        width: 70%;
+    }
+}
+@media (max-width : 800px){
+    .custom-thumb {
+        margin-bottom: 50px;
+    }
+}
