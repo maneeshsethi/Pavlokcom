@@ -1,12 +1,80 @@
+$num_frames  = 5;
+$frame_dist  = -560;
+$img_top     = 300;
+$can_size    = 300;
+$progDegrees = 328; // 90%
+$howDegrees  = 0;
+
 $(document).ready(function(){
-    
+
+ 
     $("a.youtube").YouTubePopup({ hideTitleBar: true });
     
 
     $(".phone-menu").click(function(){
       $(".menu-box").slideToggle("fast");
   });
-   $(".slider1").bxSlider({controls:false, pagerCustom: '#bx-pager', touchEnabled: true});
+    // burze
+    $( window ).scroll( function() {
+        //pie chart show lightning
+        var can_pos = $(".d_chart").offset();
+        var can_start = (can_pos.top - $(window).height())+ $can_size;
+        var can_finish = can_pos.top - 80;
+        var can_scrollAmmount = can_finish - can_start; 
+        var show_light = can_start + ((can_scrollAmmount/100)*35)
+        if($(window).scrollTop() >= show_light){
+            $(".w_light").fadeIn();
+            $(".cover").fadeOut(); 
+            console.log(show_light)
+        }else{
+            $(".w_light").fadeOut();
+            $(".cover").fadeIn();
+        }
+      // rotator
+        // if($(window).scrollTop() <= $img_top) {
+        //     if (window.addEventListener) 
+        //         window.addEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', wheel, false);
+        //         window.onmousewheel = document.onmousewheel = wheel;
+        // }
+        // else {
+        //     // prodolzi normal scroll
+        //     window.removeEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', function(){}, false);
+        //     window.onmousewheel = document.onmousewheel = false;
+        // }
+
+        // var scrollam = $(window).scrollTop();
+        // var move_bg  = $(".header-box-img");
+        // var posam    = $img_top / $num_frames;
+        // var pos      = Math.floor(scrollam / posam);
+        // var amm      = ($frame_dist * pos);
+        // move_bg.css({"background-position": amm + 'px ' + "110px"});
+    //rotator
+    });
+
+    function wheel(event) {
+        var delta = 0;
+        if (event.wheelDelta) delta = event.wheelDelta / 120;
+        else if (event.detail) delta = -event.detail / 3;
+
+        handle(delta);
+        if (event.preventDefault) event.preventDefault();
+        event.returnValue = false;
+    }
+
+    function handle(delta) {
+        var time = 100;
+        var distance = 50; 
+        
+        $('html, body').stop().animate({
+            scrollTop: $(window).scrollTop() - (distance * delta)
+        }, time );
+    }
+
+    $(".slider1").bxSlider({controls:false, pagerCustom: '#bx-pager', touchEnabled: true});
+
+    function onRsize (){
+        
+    }
 // burze
     $(".sub_in.btn").click(function(){
         var email = $('.email').val();
