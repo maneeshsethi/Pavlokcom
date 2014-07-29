@@ -129,7 +129,7 @@ window.onload = function(){
 	    }
 
 	    function handle(delta) {
-	        var time = 150;
+	        var time = 100;
 	        var distance = 100; 
 	        
 	        $('html, body').stop().animate({
