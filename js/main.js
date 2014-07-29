@@ -25,7 +25,6 @@ $(document).ready(function(){
         if($(window).scrollTop() >= show_light){
             $(".w_light").fadeIn();
             $(".cover").fadeOut(); 
-            console.log(show_light)
         }else{
             $(".w_light").fadeOut();
             $(".cover").fadeIn();
