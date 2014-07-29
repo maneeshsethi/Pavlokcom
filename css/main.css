@@ -1870,3 +1870,51 @@ h6 {
         margin-bottom: 50px;
     }
 }
+/********* canvas ******/
+.block-10-box{
+    padding-top: 45px;
+}
+.d_chart{
+    width: 300px;
+    height: 340px;
+    margin: auto;
+    position: relative;
+    background: url("../images/percent.png") no-repeat 270px 70px;
+}
+.d_chart .txt{
+    position: absolute;
+    top: 130px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.d_chart .txt span{
+    display: block;
+    color: #ffcd00;
+}
+.w_light{
+    position: absolute;
+    right: 75px;
+    top: 215px;
+    z-index: 100;
+    display: none;
+}
+.gray_area{
+    position: absolute;
+    top: 30px;
+    right: 29px;
+}
+.cover{
+    position: absolute;
+    bottom: 40px;
+}
+#block-20{
+    height: auto;
+    overflow: hidden;
+}
+#ani_chart{
+    display: block;
+    width: 300px;
+}
