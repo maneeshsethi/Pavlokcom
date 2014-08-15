@@ -1962,3 +1962,6 @@ h6 {
     background: url(../images/default3.png) right center;
     right: 20%;
 }
+.bx-wrapper .bx-controls-direction a {
+top: 390px;
+}
