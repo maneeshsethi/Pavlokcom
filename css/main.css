@@ -497,8 +497,8 @@ h6 {
 }
 #block-3 {
     width: 100%;
-    height: 800px;
-   /* background-image: url('../images/block-3-bg.jpg'); */
+/*    height: 800px;
+*/   /* background-image: url('../images/block-3-bg.jpg'); */
 
 }
 
@@ -1644,8 +1644,19 @@ h6 {
 #human-detection{
   padding:5%;
 }
-/******************************************  COSMIC DEVELOPMENT  ********************************************/
-/*-+-+-+-+-+-+-+-+-+ bx slider's and block 4 +-+-+-+-+-+-+-+-+*/
+/****************************************** ♦ COSMIC DEVELOPMENT ♦ ********************************************/
+#header{
+    height: auto;
+    overflow: hidden;
+}
+.header-box-img{
+    background-image: url(../images/sprite/pavlok-band-sprite.png);
+    width: 50%;
+    max-width: 560px;
+    padding: 0px;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
 .border-img.thumbs{
     width: 86px;
     height: 86px;
@@ -1679,7 +1690,70 @@ h6 {
         margin-right: 0 !important;
     }
 }
-/*-+-+-+-+-+-+-+-+-+ bx slider's +-+-+-+-+-+-+-+-+*/
+@media (max-width : 740px){
+    .header-box-img{
+        width: 100%;
+        margin: auto;
+        float: none;
+    }
+    .header-box-text{
+        width: 100%;
+        float: none;
+    }
+}
+/**************** how it works *******************/
+.slider-external{
+    max-width: 920px;
+    bottom: auto;
+    top: 255px;
+    left: 50%;
+    margin-left: -460px;
+    z-index: 6;
+}
+.slider-external .t_d_left{
+    float: left;
+    margin-right: 26%;
+}
+.slider-external .t_d_right{
+    float: right;
+    margin-left: 26%;
+}
+.custom-thumb {
+    margin-bottom: 140px;
+}
+.ruler{
+    top: 60%;
+    bottom: auto;
+}
+@media (max-width : 1440px){
+    .ruler{
+        top: 90%;
+        bottom: auto;
+    }
+}
+@media (max-width : 1280px){
+    .slider-external{
+        top:20%;
+    }
+}
+@media (max-width : 920px){
+    .slider-external{
+        left: 0;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .nivo-caption {
+        top: 10%;
+        left: 15%;
+        width: 70%;
+    }
+}
+@media (max-width : 800px){
+    .custom-thumb {
+        margin-bottom: 50px;
+    }
+}
 /*************** video **************/
 .embed-container { 
     position: relative; 
@@ -1817,59 +1891,6 @@ h6 {
         margin-bottom: 20px;
     }
 }
-/**************** how it works *******************/
-.slider-external{
-    max-width: 920px;
-    bottom: auto;
-    top: 255px;
-    left: 50%;
-    margin-left: -460px;
-    z-index: 6;
-}
-.slider-external .t_d_left{
-    float: left;
-    margin-right: 26%;
-}
-.slider-external .t_d_right{
-    float: right;
-    margin-left: 26%;
-}
-.custom-thumb {
-    margin-bottom: 140px;
-}
-.ruler{
-    top: 60%;
-    bottom: auto;
-}
-@media (max-width : 1440px){
-    .ruler{
-        top: 90%;
-        bottom: auto;
-    }
-}
-@media (max-width : 1280px){
-    .slider-external{
-        top:20%;
-    }
-}
-@media (max-width : 920px){
-    .slider-external{
-        left: 0;
-        margin-left: 0;
-    }
-}
-@media only screen and (max-width: 1024px){
-    .nivo-caption {
-        top: 10%;
-        left: 15%;
-        width: 70%;
-    }
-}
-@media (max-width : 800px){
-    .custom-thumb {
-        margin-bottom: 50px;
-    }
-}
 /********* canvas ******/
 .block-10-box{
     padding-top: 45px;
@@ -1917,4 +1938,27 @@ h6 {
 #ani_chart{
     display: block;
     width: 300px;
+}
+/********************************** phones slider ***********************************/
+.image_wrap{
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+.image_wrap{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+#block-3 .bx-wrapper .bx-prev{
+    width: 72px;
+    height: 133px;
+    background: url(../images/default3.png) left center;
+    left: 20%;
+}
+#block-3 .bx-wrapper .bx-next{
+    width: 72px;
+    height: 133px;
+    background: url(../images/default3.png) right center;
+    right: 20%;
 }
