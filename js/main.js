@@ -29,24 +29,24 @@ $(document).ready(function(){
             $(".w_light").fadeOut();
             $(".cover").fadeIn();
         }
-      // rotator
-        // if($(window).scrollTop() <= $img_top) {
-        //     if (window.addEventListener) 
-        //         window.addEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', wheel, false);
-        //         window.onmousewheel = document.onmousewheel = wheel;
-        // }
-        // else {
-        //     // prodolzi normal scroll
-        //     window.removeEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', function(){}, false);
-        //     window.onmousewheel = document.onmousewheel = false;
-        // }
+     // rotator
+        if($(window).scrollTop() <= $img_top) {
+            if (window.addEventListener) 
+                window.addEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', wheel, false);
+                window.onmousewheel = document.onmousewheel = wheel;
+        }
+        else {
+            // prodolzi normal scroll
+            window.removeEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', function(){}, false);
+            window.onmousewheel = document.onmousewheel = false;
+        }
 
-        // var scrollam = $(window).scrollTop();
-        // var move_bg  = $(".header-box-img");
-        // var posam    = $img_top / $num_frames;
-        // var pos      = Math.floor(scrollam / posam);
-        // var amm      = ($frame_dist * pos);
-        // move_bg.css({"background-position": amm + 'px ' + "110px"});
+        var scrollam = $(window).scrollTop();
+        var move_bg  = $(".header-box-img");
+        var posam    = $img_top / $num_frames;
+        var pos      = Math.floor(scrollam / posam);
+        var amm      = ($frame_dist * pos);
+        move_bg.css({"background-position": amm + 'px ' + "110px"});
     //rotator
     });
 
