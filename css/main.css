@@ -1650,12 +1650,14 @@ h6 {
     overflow: hidden;
 }
 .header-box-img{
-    background-image: url(../images/sprite/pavlok-band-sprite.png);
+    background-image: url(../images/sprite/pavlok-band-sprite5.png);
     width: 50%;
-    max-width: 560px;
+    max-width: 540px;
     padding: 0px;
     background-size:auto 100%;
     background-repeat: no-repeat;
+    margin-top: 100px;
+    float: right;
 }
 .border-img.thumbs{
     width: 86px;
@@ -1678,6 +1680,7 @@ h6 {
     background-position: 72% 30%;
     background-size: cover;
     padding-bottom: 30px;
+    background-attachment: fixed;
 }
 @media (max-width : 800px){
     .bx p .border-img{
@@ -1962,6 +1965,6 @@ h6 {
     background: url(../images/default3.png) right center;
     right: 20%;
 }
-.bx-wrapper .bx-controls-direction a {
-top: 390px;
+#block-3 .bx-wrapper .bx-controls-direction a {
+top: 390px!important;
 }
