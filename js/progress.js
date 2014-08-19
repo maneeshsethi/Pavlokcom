@@ -66,13 +66,12 @@ window.onload = function(){
 
 		if(typeof animation_loop != undefined) clearInterval(animation_loop);
 		
-		//random degree from 0 to 360
 		// new_degrees = $howDegrees;
 		difference = $howDegrees - degrees;
 		//This will animate the gauge to new positions
 		//The animation will take 1 second
 		//time for each frame is 1sec / difference in degrees
-		animation_loop = setInterval(animate_to, 50/difference);
+		animation_loop = setInterval(animate_to, 10/difference);
 	}
 	function animate_to()
 	{
@@ -93,7 +92,7 @@ window.onload = function(){
 	 // pie hart
 
 		$can_pos = $(".d_chart").offset();
-		$can_start = ($can_pos.top - $(window).height())+ $can_size;
+		$can_start = ($can_pos.top - $(window).height())+ $can_size -150;
 		$can_finish = $can_pos.top - 80;
 		$can_scrollAmmount = $can_finish - $can_start;
 
@@ -108,9 +107,7 @@ window.onload = function(){
 	    var winScroll = $(window).scrollTop();
 	    if( (winScroll >= $can_start) && ($can_finish >= winScroll)) {
 	        $howDegrees = Math.floor($progDegrees * ($(window).scrollTop() - $can_start) / $can_scrollAmmount);
-	        if (window.addEventListener) 
-                window.addEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', wheel, false);
-                window.onmousewheel = document.onmousewheel = wheel;
+	       
 	    }
 	    if(winScroll <= $can_start){
 	    	$howDegrees = 1;
@@ -118,24 +115,6 @@ window.onload = function(){
 	    if($can_finish <= winScroll){
 	    	$howDegrees = 327;
 	    }
-	     function wheel(event) {
-	        var delta = 0;
-	        if (event.wheelDelta) delta = event.wheelDelta / 120;
-	        else if (event.detail) delta = -event.detail / 3;
-
-	        handle(delta);
-	        if (event.preventDefault) event.preventDefault();
-	        event.returnValue = false;
-	    }
-
-	    function handle(delta) {
-	        var time = 100;
-	        var distance = 100; 
-	        
-	        $('html, body').stop().animate({
-	            scrollTop: $(window).scrollTop() - (distance * delta)
-	        }, time );
-    	}
 
 	}
 }
