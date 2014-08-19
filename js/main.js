@@ -1,16 +1,19 @@
 $num_frames  = 6;
-$frame_dist  = 25;
+$frame_dist  = 20;
 $img_top     = 300;
 $can_size    = 300;
 $progDegrees = 328; // 90%
 $howDegrees  = 0;
 
 $(document).ready(function(){
+    if (window.addEventListener) 
+        window.addEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', wheel, false);
+        window.onmousewheel = document.onmousewheel = wheel;
 
- 
+    // $("html, body").animate({scrollTop: 1});
+
     $("a.youtube").YouTubePopup({ hideTitleBar: true });
     
-
     $(".phone-menu").click(function(){
       $(".menu-box").slideToggle("fast");
   });
@@ -31,12 +34,8 @@ $(document).ready(function(){
             $(".cover").fadeIn();
         }
       // rotator
-        if($(window).scrollTop() <= $img_top) {
-            if (window.addEventListener) 
-                window.addEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', wheel, false);
-                window.onmousewheel = document.onmousewheel = wheel;
-        }
-        else {
+
+        if($(window).scrollTop() > $img_top) {
             // prodolzi normal scroll
             window.removeEventListener('wheel DOMMouseScroll MouseWheelHandler mousewheel', function(){}, false);
             window.onmousewheel = document.onmousewheel = false;
@@ -47,7 +46,11 @@ $(document).ready(function(){
         var posam    = $img_top / $num_frames;
         var pos      = Math.floor(scrollam / posam);
         var amm      = ($frame_dist * pos);
-        move_bg.css({"background-position": amm + '%' + "0px"});
+        if(pos < 6){
+            move_bg.css({"background-position": amm + '%' + "0px"});
+        }
+
+       
     //rotator
     });
 
