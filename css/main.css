@@ -218,7 +218,9 @@ textarea {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
+.anythingSlider .anythingWindow{
+	height:920px;
+}
 .clearfix:after {
     clear: both;
 }
@@ -426,7 +428,7 @@ h6 {
     width: 100%;
     height: 640px;
     background-image: url('../images/block-1-bg.jpg');
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .block-1-box {
@@ -497,7 +499,7 @@ h6 {
 }
 #block-3 {
     width: 100%;
-    height: 800px;
+    height: 1000px;
    /* background-image: url('../images/block-3-bg.jpg'); */
 
 }
@@ -1096,6 +1098,90 @@ h6 {
 .clearb {
     clear: both;
 }
+.socialCircle{
+	
+	background:#ffcd00;
+	border-radius:25px;
+	margin:10px;
+	float:left;
+	
+	height:50px;
+	width:50px;
+	
+}
+#address{
+	position:relative;
+	top:390px;
+	color:#ffcd00;
+	left:-70px;
+	font-family:Times;
+	font-style:italic;
+	font-size:20px;
+	
+}
+#formContact{
+	width:550px;
+ 	position:relative;
+ 	top:70px;
+ 	left:650px;
+}
+#nameF{
+	width:190px;
+}
+#nameL{
+	width:310px;
+}
+#subjectForm{
+	width:310px;
+}
+#emailForm{
+	width:190px;
+}
+#messageForm{
+	width:525px;
+	height:130px;
+	background:#ffcd00;
+	border:0px;
+
+	font-size:20px;
+	margin:5px;
+	font-family:Times;
+	font-style:italic;
+	color:#222222;
+	padding:5px;
+}
+#formContact input{
+	background:#ffcd00;
+	border:0px;
+	height:35px;
+	font-size:20px;
+	margin:5px;
+	font-family:Times;
+	font-style:italic;
+	color:#222222;
+	padding:5px;
+	}
+#contPic{
+	position:relative;
+	left:360px;
+	top:50px;
+}
+.socialCircle:hover{
+	background:#626262;
+}
+#socialMedia{
+	position:relative;
+	top:250px;
+	left:270px;
+	width:300px;
+}
+#addSmall{
+	text-align: left;
+	width:480px;
+	position:absolute;
+	top:50px;
+	left:350px;
+}
 .slider-external{
     position: absolute;
     bottom: 63px;
@@ -1191,6 +1277,7 @@ h6 {
 @media only screen and (max-width: 1680px) {
     #wrapper {
         width: 100%;
+
     }
 }
 
@@ -1198,6 +1285,7 @@ h6 {
     .row {
         width: 96%;
         padding: 0 2%;
+      
     }
     .nivo-caption {
         top: 20%;
@@ -1222,6 +1310,9 @@ h6 {
         top: 10%;
         left: 5%;
         width: 90%;
+    }
+    #block-1{
+    	height:700px;
     }
 }
 @media only screen and (max-width: 880px) {
@@ -1347,8 +1438,85 @@ h6 {
     }
 }
 @media only screen and (max-width: 580px) {
+    #block-1 h2{
+    	font-size:15px;
+    }
+    #block-1 p{
+    	font-size: 14px;
+    }
+    .border-img{
+    	border: 8px solid #C2C2C2;
+    }
+    .phone-menu{
+    	float:right;
+    }
+    .nivoSlider{
+    	height:500px;
+    }
+    .nivo-caption p,h2{
+    	font-size:13px;
+    	text-align:center;
+    }
+    .nivoSlider img{
+    	height:500px;
+    }
+    .slider-external{
+    	bottom:15px;
+    }
+    #block-3{
+    	height:0px;
+    	display:none;
+    }
+    #block-4{
+    	height:0px;
+    	display:none;
+    }
+    .nivo-caption{
+    	top:15px;
+    }
+    #block-6{
+    	background:none;
+    	background:#18191A;
+    }
+  	.get-started-btn{
+  		margin:0px auto;
+  	}
+  .lcolor h2{
+  	font-size:20px;
+  	text-align:center;
+  }	
+  .block-5-title h2{
+  	font-size:20px;
+  }
+  .block-5-holder{
+  	height:720px;
+  }
+  .block-9-box img{
+  	
+  width:250px;
+  }
+    p{
+    	text-align:center;
+    	
+    }
+    .block-10-box{
+    	padding-top:40px;
+    }
+    #aristotle-quote{
+    	font-size:22px;
+    }
+    #block-20{
+    	height:340px;
+    }
+    .block-1-box{
+    	padding-top:50px;
+    }
+    
     .block-4-box {
         padding-top: 20px;
+    }
+    #year{
+    	display: none;
     }
     .block-5-holder {
         background-position: 95px 135px;
@@ -1371,9 +1539,7 @@ h6 {
         padding-top: 0px;
         float: none;
     }
-    .phone-menu {
-        float: left;
-    }
+ 
     .menu-box {
         top: 145px;
     }
@@ -1391,7 +1557,7 @@ h6 {
         padding-left: 0px;
     }
     .block-1-box {
-        padding-top: 100px;
+       
     }
     #block-1 {
         background-position: -425px top;
@@ -1399,12 +1565,8 @@ h6 {
     .ruler {
         display: none;
     }
-    .nivo-caption h2 {
-        font-size: 10px;
-    }
-    .nivo-caption p {
-        font-size: 5px;
-    }
+  
+  
     .cust-text {
         font-size: 5px;
     }
@@ -1414,6 +1576,7 @@ h6 {
     #block-3 {
         background-position: -604px top;
     }
+    
     .block-4-box h2 {
         font-size: 26px;
     }
@@ -1620,11 +1783,12 @@ h6 {
 .block-4-box p.white-text-box-4{
     opacity: 0.7;
     color: #fff;
-    font-family: 'halisgr-regular';
+    
     font-size: 18px;
     font-style: italic;
     width:70%;
 }
+
 #block-11 {
     width: 100%;
     height: 237px;
